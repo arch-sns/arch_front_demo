@@ -110,3 +110,20 @@ header{
 .introduction{
 	padding-top: 20px;
 }
+
+h1.thread-title{
+	padding-top: 30px;
+}
+
+h2.thread-title{
+	padding: 12px 15px 0;
+}
+
+.thread-item{
+	height: 100px;
+	margin-top: 15px;
+	background: #eee;
+	p{
+		padding: 12px 15px 0;
+	}
+}
