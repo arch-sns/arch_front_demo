@@ -1,10 +1,13 @@
 @charset "utf-8";
 
+$pc-width: 980px;
 $accent_color: #fbb03b;
 $light-text: #fff;
+$main-text-color: #222;
 
 *{
-
+	padding: 0;
+	margin: 0;
 }
 html{
 	padding: 0;
@@ -13,7 +16,7 @@ html{
 body{
 	padding: 0;
 	margin: 0;
-	color: #222;
+	color: $main-text-color;
 	font-family: Meiryo,"メイリオ","Hiragino Kaku Gothic ProN",sans-serif;
 	line-height: 1.5;
 	font-size: 1em;
@@ -23,6 +26,14 @@ body{
 	content: "";
 	display: block;
 }
+img{
+	background: none;
+	vertical-align: bottom;
+}
+a:hover{
+	text-decoration: underline;
+}
+/*  */
 /* header */
 header{
 	width: 100%;
@@ -30,7 +41,7 @@ header{
 	background: $accent_color;
 }
 .header-wrapper{
-	width: 80%;
+	width: $pc-width;
 	margin: auto;
 }
 .logo-title{
@@ -47,16 +58,54 @@ header{
 	height: 50px;
 }
 .contener{
-	width: 80%;
+	width: $pc-width;
 	margin: auto;
 }
 
-.user-info{
-	.user-icon{
-		img{
-			width: 100px;
-			height: 100px;
+.user-index{
+	padding-top: 20px;
+}
+
+.user-icon{
+	float: left;
+	img{
+		width: 100px;
+		height: 100px;
+	}
+}
+.user-name{
+	float: left;
+	padding: 20px 20px;
+}
+
+.rank-block{
+	padding: 20px 0;
+}
+
+.rank-list{
+	dt{
+		margin-right: 5px;
+		float: left;
+		list-style: none;
+		a{
+			color: $main-text-color;
+			text-decoration: none;
+		}
+		a:hover{
+			opacity: 0.5;
+			text-decoration: underline;
+		}
+	}
+	dd{
+		float: left;
+		margin-right: 20px;
+		a{
+			color: #ff0000;
+			text-decoration: none;
 		}
 	}
 }
 
+.introduction{
+	padding-top: 20px;
+}
