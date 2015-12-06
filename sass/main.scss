@@ -4,6 +4,7 @@ $pc-width: 980px;
 $accent_color: #fbb03b;
 $light-text: #fff;
 $main-text-color: #222;
+$title-small: #009688;
 
 *{
 	padding: 0;
@@ -89,7 +90,7 @@ header{
 		float: left;
 		list-style: none;
 		a{
-			color: $main-text-color;
+			color: $title-small;
 			text-decoration: none;
 		}
 		a:hover{
